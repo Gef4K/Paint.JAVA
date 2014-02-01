@@ -1,5 +1,5 @@
 /*
- *	Copyright 2013 HeroesGrave
+ *	Copyright 2013 HeroesGrave and other Paint.JAVA developers.
  *
  *	This file is part of Paint.JAVA
  *
@@ -76,7 +76,7 @@ public class SelectTool extends Tool
 	{
 		sx = x;
 		sy = y;
-		this.shape = getShape((SelectionType) type.getSelectedItem(), x, y, 1, 1);
+		this.shape = getShape((SelectionType) type.getSelectedItem(), x, y, 0, 0);
 		Paint.main.gui.canvas.selector = new MultiChange(new ShapeChange(shape, 0xff0066ff).setFill(true).setComposite(
 				AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0x3f / 255f)), new ShapeChange(shape, 0xff001133).setComposite(AlphaComposite
 				.getInstance(AlphaComposite.SRC_OVER, 0x7f / 255f)));

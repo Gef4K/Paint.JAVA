@@ -1,5 +1,5 @@
 /*
- *	Copyright 2013 HeroesGrave
+ *	Copyright 2013 HeroesGrave and other Paint.JAVA developers.
  *
  *	This file is part of Paint.JAVA
  *
@@ -66,7 +66,7 @@ public class Rectangle extends Tool
 	{
 		sx = x;
 		sy = y;
-		rect = new Rectangle2D.Float(x, y, 1, 1);
+		rect = new Rectangle2D.Float(x, y, 0, 0);
 		if(button == MouseEvent.BUTTON1)
 		{
 			change = new ShapeChange(rect, Paint.main.getLeftColour()).setFill(fill.isSelected());
